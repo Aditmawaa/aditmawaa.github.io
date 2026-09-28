@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Muhammad Aditya Wiryawan Azizi Aswad — Full Stack Developer, Data & Operations Engineering">
-<title>Aditya — Full Stack Developer & Data Engineer</title>
+<title>Aditya — Full Stack Developer & Data</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -22,12 +22,19 @@ section{padding:110px 0;border-top:1px solid var(--line)}.section-head{display:g
 @media(max-width:560px){.flow{grid-template-columns:1fr}.hero h1{font-size:54px}.hero p{font-size:17px}.intro p{font-size:19px}.facts{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.work-row{grid-template-columns:1fr;gap:7px}.project{grid-template-columns:1fr;gap:10px}.project .project-link{grid-column:auto}.cta{padding:85px 0}footer{display:block}.footer-right{margin-top:6px}}
 
 ::selection{background:var(--accent);color:#0b0d0c}.btn,.links a,.contact-list a,.project-link a{transition:color .2s ease,background .2s ease,border-color .2s ease,transform .2s ease}.project-showcase{background:transparent}.visual-card img{filter:saturate(.82) contrast(1.04)}
+
+/* CV download */
+.cv-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:5px}
+.cv-link:hover{opacity:.75}
+.cv-floating{position:fixed;right:22px;bottom:22px;z-index:50;display:inline-flex;align-items:center;padding:11px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.cv-floating:hover{border-color:var(--accent);color:var(--accent)}
 </style>
 </head>
 <body>
-<nav id="nav"><div class="wrap navin"><a class="brand" href="#home">Aditya<span>.</span></a><button class="menu" aria-label="Open menu" onclick="nav.classList.toggle('navopen')">☰</button><div class="links"><a href="#about">About</a><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+<nav id="nav"><div class="wrap navin"><a class="brand" href="#home">Aditya<span>.</span></a><button class="menu" aria-label="Open menu" onclick="nav.classList.toggle('navopen')">☰</button><div class="links"><a href="#about">About</a><a href="#work">Experience</a><a href="#projects">Projects</a>
+<a class="btn" href="assets/Muhammad_Aditya_CV.pdf" download>Download CV ↓</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
 <main id="home">
-<section class="hero wrap"><div class="reveal"><div class="eyebrow">Backend Developer · Data · Operations</div><h1>I build digital systems for <em>real-world problems.</em></h1><p>Muhammad Aditya Wiryawan Azizi Aswad — an IT graduate and operations/data professional combining software engineering, analytics, and practical business-process experience.</p><div class="actions"><a class="btn primary" href="#projects">View selected work ↗</a><a class="btn" href="mailto:aditmawaa@gmail.com">Get in touch</a></div></div><div class="portrait reveal"><img src="assets/profile.jpg" alt="Muhammad Aditya Wiryawan Azizi Aswad"></div></section>
+<section class="hero wrap"><div class="reveal"><div class="eyebrow">Full Stack Developer · Data · Operations</div><h1>I build complete digital systems for <em>real-world problems.</em></h1><p>Muhammad Aditya Wiryawan Azizi Aswad — an IT graduate and operations/data professional combining software engineering, analytics, and practical business-process experience.</p><div class="actions"><a class="btn primary" href="#projects">View selected work ↗</a><a class="btn" href="mailto:aditmawaa@gmail.com">Get in touch</a></div></div><div class="portrait reveal"><img src="assets/profile.jpg" alt="Muhammad Aditya Wiryawan Azizi Aswad"></div></section>
 <section id="about"><div class="wrap"><div class="section-head reveal"><div><div class="section-no">01 / About</div></div><div><h2>Technology with operational context.</h2><p>I enjoy turning messy operational needs into clear systems, useful data, and reliable workflows.</p></div></div><div class="intro"><div class="reveal"><p>My background spans procurement, spare-parts coordination, operational excellence, production data, reporting, and HSE administration across industrial and mining environments.</p></div><div class="facts reveal"><div class="fact"><strong>5+</strong><span>Years professional experience</span></div><div class="fact"><strong>B.IT</strong><span>Brawijaya University</span></div><div class="fact"><strong>SAP</strong><span>ECC / S4HANA exposure</span></div><div class="fact"><strong>Data</strong><span>Excel · Power BI · SQL</span></div></div></div></div></section>
 <section id="work"><div class="wrap"><div class="section-head reveal"><div><div class="section-no">02 / Experience</div></div><div><h2>From operations to engineering.</h2><p>A career built around accuracy, coordination, process improvement, and data.</p></div></div><div class="work reveal">
 <div class="work-row"><time>2025 — Present</time><div><h3>Assistant Safety Engineer</h3><div class="company">PT Huali Nickel Indonesia · Data & Administration Support</div><p>Managed operational/HSE data, reporting, documentation, presentations, document control, and site coordination.</p></div><div class="type">Operations · Data</div></div>
@@ -72,6 +79,6 @@ section{padding:110px 0;border-top:1px solid var(--line)}.section-head{display:g
 <a class="contact-link" href="https://linkedin.com/in/aditmawaa" target="_blank" rel="noreferrer"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8v11"/><path d="M5 5v.1"/><path d="M10 19V8"/><path d="M10 12c1-3 7-4 7 2v5"/><path d="M17 19v-5"/></svg>LinkedIn ↗</a>
 <a class="contact-link" href="https://github.com/aditmawaa" target="_blank" rel="noreferrer"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-5-2m10 4v-3.2c0-1 .4-1.7 1-2.3-3.3-.4-6.7-1.6-6.7-7A5.4 5.4 0 0 1 9.7 4c-.2-.5-.6-1.6.2-3.3 0 0 1.1-.3 3.5 1.3a12 12 0 0 1 6.4 0C22.2.4 23.3.7 23.3.7c.8 1.7.4 2.8.2 3.3a5.4 5.4 0 0 1 1.4 3.5c0 5.4-3.4 6.6-6.7 7 .6.5 1 1.4 1 2.6V22"/></svg>GitHub ↗</a>
 </div></div></div></section>
-</main><footer class="wrap"><span>© 2026 Muhammad Aditya Wiryawan Azizi Aswad</span><span class="footer-right">Full Stack · Data · Operations</span></footer>
+</main><footer class="wrap"><span>© 2026 Muhammad Aditya Wiryawan Azizi Aswad</span><span class="footer-right">Backend · Data · Operations</span></footer>
 <script>const nav=document.getElementById('nav');const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('navopen')));</script>
 </body></html>

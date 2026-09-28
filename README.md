@@ -110,3 +110,32 @@ The V4 visual system was adjusted to follow the darker, high-contrast direction 
 ```
 
 The accent is intentionally used for small highlights, links, section labels, and the primary CTA rather than filling the whole interface. This keeps the portfolio visually close to a minimalist developer/editorial aesthetic.
+
+
+## CV Download
+
+The portfolio includes the current CV as:
+
+```text
+assets/Muhammad_Aditya_CV.pdf
+```
+
+The hero/contact area links to the local PDF using:
+
+```html
+<a href="assets/Muhammad_Aditya_CV.pdf" download>
+  Download CV
+</a>
+```
+
+Because the CV is stored inside the repository, GitHub Pages serves it directly with the portfolio. The `download` attribute asks the browser to download the PDF rather than navigate to it.
+
+When the CV is updated, replace the PDF in `assets/` using the same filename and commit/push the change:
+
+```bash
+git add assets/Muhammad_Aditya_CV.pdf
+git commit -m "Update CV"
+git push origin main
+```
+
+If you want visitors to open the CV in a browser instead of downloading it, remove the `download` attribute.
