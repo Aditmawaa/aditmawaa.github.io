@@ -139,3 +139,16 @@ git push origin main
 ```
 
 If you want visitors to open the CV in a browser instead of downloading it, remove the `download` attribute.
+
+
+## Hero CTA
+
+The hero section uses **Download CV** as the primary secondary action. The previous **Get in touch** button was removed from the hero.
+
+The button points to:
+
+```text
+assets/Muhammad_Aditya_CV.pdf
+```
+
+and uses the HTML `download` attribute.
