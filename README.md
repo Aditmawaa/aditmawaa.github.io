@@ -1,48 +1,112 @@
-# Aditya Portfolio
+# Aditya Portfolio — V4 Live Project Preview
 
-Personal portfolio for Muhammad Aditya Wiryawan Azizi Aswad — Backend Developer | Data & Operations Engineering.
+Personal portfolio for Muhammad Aditya Wiryawan Azizi Aswad.
 
-## Highlights
-- Experience across procurement, inventory, operations, reporting and data support.
-- Recent project: Balantang Jaya Global company profile website: https://balantangjaya.com/
-- Portfolio case studies for backend, procurement analytics and demand forecasting.
+## What changed in V4
 
-## Publish
-This is a static HTML/CSS/JS site and can be deployed with GitHub Pages, Netlify or similar static hosting.
+- Added a prominent browser-style preview of the **actual Balantang Jaya Global website**.
+- Added direct project visuals from `balantangjaya.com`.
+- Changed project images from lazy loading to eager loading so the visuals appear immediately when the Projects section is reached.
+- Added a live `<iframe>` preview with a direct-image fallback/link.
+- Updated the Projects section to clearly identify Balantang Jaya as the most recent deployed project.
+- Updated the GitHub contact link to `https://github.com/aditmawaa`.
+- Kept the site framework-free: HTML + CSS + vanilla JavaScript.
 
-## Before publishing
-- Replace the GitHub placeholder with the real profile URL.
-- Verify the exact backend technologies and claims you want to present.
-- Add real GitHub repositories/demos as projects are completed.
+## Important browser/security note
 
+The browser preview embeds:
 
-## Visual Project Mockups and Contact Icons
-
-The current portfolio uses real visual assets from the Balantang Jaya Global website for the featured project section. The site publishes project/gallery visuals including the drilling operation and project site overview. These are referenced directly from the live project website:
-
-```text
-https://balantangjaya.com/assets/images/gallery/01-drilling-operation.jpg
-https://balantangjaya.com/assets/images/gallery/07-project-site-overview.jpg
-https://balantangjaya.com/assets/images/gallery/03-operator-control.jpg
+```html
+<iframe src="https://balantangjaya.com/"></iframe>
 ```
 
-The portfolio wraps these real project visuals inside a CSS browser mockup. No AI-generated image is used for the project mockup. The browser frame is built entirely with HTML/CSS, so it remains editable and lightweight.
+A website can prevent iframe embedding with security headers such as `X-Frame-Options` or Content Security Policy.
 
-The Experience section also contains an HTML/CSS process mockup representing the professional areas described in the CV:
+If Balantang Jaya blocks iframe embedding, the project still includes direct image URLs and a visible **Open live website** fallback link.
+
+For a completely self-contained GitHub Pages version, the next improvement is to store an actual screenshot captured from the live Balantang Jaya website inside:
 
 ```text
-Procurement → Inventory → Operations → HSE & Data
+assets/projects/
 ```
 
-This is intentionally a visual representation rather than a claim of measured performance or a screenshot of an internal company system.
+and use that local screenshot as the browser mockup image. The screenshot should be captured from the real website, not AI-generated.
 
-### Contact icons
+## Project structure
 
-The contact section uses inline SVG icons for:
+```text
+aditya-portfolio/
+├── index.html
+├── README.md
+└── assets/
+    └── profile.jpg
+```
 
-- Email
-- Phone
-- LinkedIn
-- GitHub
+## Run locally
 
-The icons are embedded directly in `index.html`, so there is no icon library dependency or external icon CDN.
+Open `index.html` directly, or use VS Code Live Server.
+
+Alternatively:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
+
+## GitHub Pages deployment
+
+```bash
+git add .
+git commit -m "Add live Balantang Jaya project preview"
+git push origin main
+```
+
+After GitHub Pages deploys, hard-refresh the browser:
+
+```text
+Ctrl + Shift + R
+```
+
+## Featured project
+
+**Balantang Jaya Global — Company Profile Website**
+
+Live website:
+
+https://balantangjaya.com/
+
+The portfolio presents this as the latest completed/deployed project.
+
+The following remain technical case studies until actually implemented:
+
+- Spare Part Inventory API
+- Procurement Analytics Platform
+- Spare Part Demand Forecasting
+
+## Contact
+
+- Email: aditmawaa@gmail.com
+- LinkedIn: https://linkedin.com/in/aditmawaa
+- GitHub: https://github.com/aditmawaa
+
+## Visual style update — dark editorial palette
+
+The V4 visual system was adjusted to follow the darker, high-contrast direction of the referenced `herlano.dev` portfolio while keeping the layout and content original to Aditya. The palette uses a near-black canvas, off-white typography, muted gray supporting text, thin dark borders, and a restrained lime-green accent.
+
+```css
+:root {
+  --bg: #0b0d0c;
+  --ink: #f3f5ef;
+  --muted: #9aa19b;
+  --line: #292e2a;
+  --card: #121614;
+  --accent: #b7ff3c;
+}
+```
+
+The accent is intentionally used for small highlights, links, section labels, and the primary CTA rather than filling the whole interface. This keeps the portfolio visually close to a minimalist developer/editorial aesthetic.
