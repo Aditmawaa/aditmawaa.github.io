@@ -1,84 +1,213 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Muhammad Aditya Wiryawan Azizi Aswad — Full Stack Developer, Data & Operations Engineering">
-<title>Aditya — Full Stack Developer & Data</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Aditya — Full Stack Developer · Data · Operations</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#07111f;--ink:#eef5ff;--muted:#9fb0c4;--line:rgba(255,255,255,.1);--card:#0c1929;--accent:#6ee7d8;--accent2:#78a9ff;--white:#ffffff;--max:1180px}
-*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 85% 5%,rgba(120,169,255,.14),transparent 28%),radial-gradient(circle at 15% 20%,rgba(110,231,216,.08),transparent 24%),var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),90%);margin:auto}
-nav{position:sticky;top:0;z-index:20;background:rgba(7,17,31,.78);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.navin{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{font:700 23px "Space Grotesk";letter-spacing:-.04em}.brand span{color:var(--accent)}.links{display:flex;gap:28px;font-size:14px;color:var(--muted)}.links a:hover{color:var(--accent)}.menu{display:none;border:0;background:none;font-size:25px}
-.hero{padding:112px 0 95px;min-height:calc(100vh - 78px);display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:center}.eyebrow{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700}.hero h1{font:700 clamp(54px,8vw,104px)/.94 "Space Grotesk";letter-spacing:-.065em;margin:18px 0 30px;max-width:900px}.hero h1 em{font-style:normal;color:var(--accent)}.hero p{font-size:19px;color:var(--muted);max-width:680px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:32px}.btn{border:1px solid var(--line);padding:12px 18px;border-radius:999px;font-size:14px;font-weight:700}.btn.primary{background:var(--accent);color:#07111f;border-color:var(--accent)}.btn:hover{transform:translateY(-2px)}.portrait{position:relative}.portrait img{width:min(390px,100%);aspect-ratio:4/5;object-fit:cover;display:block;margin-left:auto;border-radius:2px;filter:saturate(.85)}.portrait:after{content:"MUHAMMAD ADITYA";position:absolute;right:-16px;bottom:28px;writing-mode:vertical-rl;font:700 11px "Space Grotesk";letter-spacing:.16em;color:var(--muted)}
-section{padding:110px 0;border-top:1px solid var(--line)}.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;margin-bottom:55px}.section-no{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.13em}.section-head h2{font:700 clamp(36px,5vw,64px)/1 "Space Grotesk";letter-spacing:-.055em;margin:0}.section-head p{color:var(--muted);font-size:17px;max-width:600px;margin:15px 0 0}
-.intro{display:grid;grid-template-columns:1fr 1fr;gap:50px}.intro p{font-size:22px;line-height:1.45;margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}.fact{padding:20px 0;border-bottom:1px solid var(--line)}.fact strong{display:block;font:700 29px "Space Grotesk"}.fact span{font-size:13px;color:var(--muted)}
-.experience-visual{margin-top:42px;border:1px solid var(--line);background:var(--card);padding:26px}.experience-visual-top{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:22px}.experience-visual-title{font:600 18px "Space Grotesk"}.experience-visual-label{font-size:10px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.12em}.flow{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.flow-item{min-height:135px;padding:18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}.flow-icon{width:34px;height:34px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--accent)}.flow-icon svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.7}.flow-item strong{font:600 16px "Space Grotesk"}.flow-item span{font-size:11px;color:var(--muted)}.work{border-top:1px solid var(--line)}.work-row{display:grid;grid-template-columns:150px 1fr 190px;gap:35px;padding:30px 0;border-bottom:1px solid var(--line);align-items:start}.work-row time{font-size:13px;color:var(--accent);font-weight:700}.work-row h3{font:600 25px "Space Grotesk";margin:0 0 4px}.work-row .company{color:var(--muted);font-size:14px;margin-bottom:9px}.work-row p{color:var(--muted);font-size:14px;margin:0;max-width:680px}.work-row .type{text-align:right;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
-.project-showcase{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;margin:0 0 45px}.browser-mockup{border:1px solid var(--line);background:#0c1929;box-shadow:0 24px 60px rgba(0,0,0,.35);overflow:hidden}.browser-bar{height:38px;display:flex;align-items:center;gap:7px;padding:0 13px;border-bottom:1px solid var(--line);background:#0f2034}.browser-dot{width:8px;height:8px;border-radius:50%;background:#b8b9b2}.browser-url{margin-left:8px;font-size:10px;color:#74766f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.browser-screen{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}.browser-preview{position:relative;aspect-ratio:16/9;background:#07111f;overflow:hidden}.browser-preview iframe{width:100%;height:100%;border:0;display:block;background:#0c1929}.preview-fallback{display:none;position:absolute;inset:0;background:#0c1929}.preview-fallback img{width:100%;height:100%;object-fit:cover;display:block}.preview-fallback a{position:absolute;left:16px;bottom:16px;background:#6ee7d8;color:#07111f;padding:9px 13px;border-radius:999px;font-size:12px;font-weight:700}.visual-stack{display:grid;gap:28px}.visual-card{border-top:1px solid var(--line);padding-top:15px}.visual-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;filter:saturate(.92)}.visual-card .caption{display:flex;justify-content:space-between;gap:15px;margin-top:9px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}.project-list{border-top:1px solid var(--line)}.project{display:grid;grid-template-columns:100px 1fr 190px;gap:35px;padding:38px 0;border-bottom:1px solid var(--line);align-items:start}.project .num{font:600 13px "Space Grotesk";color:var(--accent)}.project h3{font:600 clamp(27px,3vw,42px)/1.05 "Space Grotesk";letter-spacing:-.04em;margin:0 0 13px}.project p{color:var(--muted);max-width:680px;margin:0}.project .project-link{text-align:right;font-size:14px;font-weight:700}.project .project-link span{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:5px}.project:hover h3{color:var(--accent)}.project-note{padding:24px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:13px}
-.skills{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.skill{padding:25px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.skill h3{font:600 18px "Space Grotesk";margin:0 0 10px}.skill p{font-size:13px;color:var(--muted);margin:0}
-.cta{padding:120px 0}.cta-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}.cta h2{font:700 clamp(48px,7vw,92px)/.95 "Space Grotesk";letter-spacing:-.06em;margin:0}.cta h2 em{font-style:normal;color:var(--accent)}.contact-list{border-top:1px solid var(--line)}.contact-list a{display:block;padding:17px 0;border-bottom:1px solid var(--line);font-size:15px}.contact-list a:hover{color:var(--accent)}.contact-icon{width:18px;height:18px;display:inline-block;vertical-align:-4px;margin-right:10px;stroke:currentColor;fill:none;stroke-width:1.8}.contact-link{display:flex!important;align-items:center}footer{padding:26px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
+:root{
+  --bg:#0b1729;--bg2:#101f34;--panel:#12243b;--ink:#f5f8ff;--muted:#aab8ca;
+  --line:rgba(210,225,244,.16);--accent:#54e1d0;--accent2:#4da3ff;--white:#fff;
+  --max:1180px;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,var(--bg) 0%,#0d1c31 55%,#0a1627 100%);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(circle at 80% 12%,rgba(77,163,255,.12),transparent 28%),radial-gradient(circle at 10% 48%,rgba(84,225,208,.07),transparent 25%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),90%);margin:auto}
+nav{position:sticky;top:0;z-index:50;background:rgba(8,20,36,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.navin{height:78px;display:flex;align-items:center;justify-content:space-between}
+.brand{font:700 23px "Space Grotesk";letter-spacing:-.04em;color:var(--white)}
+.brand span{color:var(--accent)!important}
+.links{display:flex;gap:28px;font-size:14px;color:#e8eef7}
+.links a{transition:color .2s,transform .2s}.links a:hover{color:var(--accent);transform:translateY(-1px)}
+.menu{display:none;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.04);color:#fff!important;width:42px;height:42px;border-radius:10px;font-size:24px;line-height:1;cursor:pointer}
+.menu:focus{outline:2px solid var(--accent);outline-offset:2px}
+.hero{padding:92px 0 90px;min-height:calc(100vh - 78px);display:grid;grid-template-columns:1.1fr .9fr;gap:75px;align-items:center}
+.eyebrow{font-size:13px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.hero h1{font:700 clamp(54px,8vw,104px)/.94 "Space Grotesk";letter-spacing:-.065em;margin:18px 0 30px;max-width:900px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{font-size:19px;color:var(--muted);max-width:680px}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:32px}
+.btn{border:1px solid rgba(255,255,255,.35);padding:12px 18px;border-radius:999px;font-size:14px;font-weight:700;transition:.2s}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#071722}
+.btn:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 10px 25px rgba(84,225,208,.12)}
+
+.portrait-wrap{position:relative;min-height:510px;display:grid;place-items:center}
+.portrait-orbit{position:absolute;width:430px;height:430px;border:1px solid rgba(84,225,208,.18);border-radius:50%;right:0;top:34px}
+.portrait-orbit:before,.portrait-orbit:after{content:"";position:absolute;border-radius:50%}
+.portrait-orbit:before{width:9px;height:9px;background:var(--accent);right:45px;top:54px;box-shadow:0 0 24px var(--accent)}
+.portrait-orbit:after{width:6px;height:6px;background:var(--accent2);left:42px;bottom:66px}
+.portrait-card{position:relative;width:min(360px,82%);aspect-ratio:4/5;z-index:2}
+.portrait-card:before{content:"";position:absolute;inset:-13px;border:1px solid rgba(84,225,208,.42);border-radius:18px;transform:rotate(3deg)}
+.portrait-card:after{content:"";position:absolute;inset:11px -11px -11px 11px;border:1px solid rgba(77,163,255,.3);border-radius:18px;z-index:-1}
+.portrait-card img{width:100%;height:100%;object-fit:cover;display:block;border-radius:14px;border:1px solid rgba(255,255,255,.2);box-shadow:0 35px 80px rgba(0,0,0,.35);filter:saturate(.9)}
+.portrait-tag{position:absolute;left:-35px;bottom:28px;background:rgba(11,23,41,.92);border:1px solid var(--line);border-radius:12px;padding:13px 15px;box-shadow:0 15px 35px rgba(0,0,0,.25)}
+.portrait-tag small{display:block;color:var(--accent);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.portrait-tag strong{font:600 14px "Space Grotesk"}
+.portrait-label{position:absolute;right:-24px;top:48px;writing-mode:vertical-rl;font:700 10px "Space Grotesk";letter-spacing:.18em;color:#c7d4e4}
+.portrait-index{position:absolute;right:28px;bottom:2px;font:700 72px/.8 "Space Grotesk";color:rgba(255,255,255,.035)}
+
+section{padding:110px 0;border-top:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;margin-bottom:55px}
+.section-no{font-size:12px;color:var(--accent);font-weight:700;letter-spacing:.13em}
+.section-head h2{font:700 clamp(36px,5vw,64px)/1 "Space Grotesk";letter-spacing:-.055em;margin:0}
+.section-head p{color:var(--muted);font-size:17px;max-width:600px;margin:15px 0 0}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+.intro p{font-size:22px;line-height:1.45;margin:0}.facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.fact{padding:20px 0;border-bottom:1px solid var(--line)}.fact strong{display:block;font:700 29px "Space Grotesk"}.fact span{font-size:13px;color:var(--muted)}
+.work{border-top:1px solid var(--line)}
+.work-row{display:grid;grid-template-columns:150px 1fr 190px;gap:35px;padding:30px 0;border-bottom:1px solid var(--line);align-items:start}
+.work-row time{font-size:13px;color:var(--accent);font-weight:700}.work-row h3{font:600 25px "Space Grotesk";margin:0 0 4px}
+.work-row .company{color:var(--muted);font-size:14px;margin-bottom:9px}.work-row p{color:var(--muted);font-size:14px;margin:0;max-width:680px}.work-row .type{text-align:right;color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.1em}
+
+.project-showcase{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;margin:0 0 45px}
+.browser-mockup{border:1px solid var(--line);background:#0e1b2d;box-shadow:0 24px 60px rgba(0,0,0,.28);overflow:hidden;border-radius:12px}
+.browser-bar{height:38px;display:flex;align-items:center;gap:7px;padding:0 13px;border-bottom:1px solid var(--line);background:#122238}
+.browser-dot{width:8px;height:8px;border-radius:50%;background:#64758a}.browser-url{margin-left:8px;font-size:10px;color:#91a0b3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.browser-screen{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}.visual-stack{display:grid;gap:28px}
+.visual-card{border-top:1px solid var(--line);padding-top:15px}.visual-card img{width:100%;aspect-ratio:16/10;object-fit:cover;display:block;filter:saturate(.9);border-radius:8px}
+.visual-card .caption{display:flex;justify-content:space-between;gap:15px;margin-top:9px;font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.project-list{border-top:1px solid var(--line)}.project{display:grid;grid-template-columns:100px 1fr 190px;gap:35px;padding:38px 0;border-bottom:1px solid var(--line);align-items:start}
+.project .num{font:600 13px "Space Grotesk";color:var(--accent)}.project h3{font:600 clamp(27px,3vw,42px)/1.05 "Space Grotesk";letter-spacing:-.04em;margin:0 0 13px}
+.project p{color:var(--muted);max-width:680px;margin:0}.project .project-link{text-align:right;font-size:14px;font-weight:700}.project .project-link span{display:block;color:var(--muted);font-size:12px;font-weight:400;margin-top:5px}.project:hover h3{color:var(--accent)}
+
+.skills{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.skill{padding:25px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.015);transition:background .2s,transform .2s}
+.skill:hover{background:rgba(84,225,208,.04);transform:translateY(-3px)}.skill h3{font:600 18px "Space Grotesk";margin:0 0 10px}.skill p{font-size:13px;color:var(--muted);margin:0}
+.skill .skill-list{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:7px}.skill .skill-list li{font-size:11px;padding:5px 8px;border:1px solid var(--line);border-radius:999px;color:#d7e1ee}
+
+.cta{padding:120px 0}.cta-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:70px;align-items:end}.cta h2{font:700 clamp(48px,7vw,92px)/.95 "Space Grotesk";letter-spacing:-.06em;margin:0}.cta h2 em{font-style:normal;color:var(--accent)}
+.contact-list{border-top:1px solid var(--line)}.contact-list a{display:block;padding:17px 0;border-bottom:1px solid var(--line);font-size:15px}.contact-list a:hover{color:var(--accent)}
+.contact-icon{width:18px;height:18px;display:inline-block;vertical-align:-4px;margin-right:10px;stroke:currentColor;fill:none;stroke-width:1.8}.contact-link{display:flex!important;align-items:center}
+footer{padding:26px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;justify-content:space-between}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}.reveal.show{opacity:1;transform:none}
-@media(max-width:850px){.flow{grid-template-columns:1fr 1fr}.project-showcase{grid-template-columns:1fr}.hero{grid-template-columns:1fr;padding:75px 0}.portrait{order:-1}.portrait img{width:260px;margin:0}.portrait:after{display:none}.section-head,.intro,.cta-inner{grid-template-columns:1fr;gap:25px}.work-row{grid-template-columns:120px 1fr}.work-row .type{display:none}.project{grid-template-columns:60px 1fr}.project .project-link{text-align:left;grid-column:2}.skills{grid-template-columns:1fr 1fr}.links{display:none}.menu{display:block}.navopen .links{display:flex;position:absolute;top:78px;left:0;right:0;background:var(--bg);padding:18px 5%;flex-direction:column;border-bottom:1px solid var(--line)}}
-@media(max-width:560px){.flow{grid-template-columns:1fr}.hero h1{font-size:54px}.hero p{font-size:17px}.intro p{font-size:19px}.facts{grid-template-columns:1fr}.skills{grid-template-columns:1fr}.work-row{grid-template-columns:1fr;gap:7px}.project{grid-template-columns:1fr;gap:10px}.project .project-link{grid-column:auto}.cta{padding:85px 0}footer{display:block}.footer-right{margin-top:6px}}
 
-::selection{background:var(--accent);color:#07111f}.btn,.links a,.contact-list a,.project-link a{transition:color .2s ease,background .2s ease,border-color .2s ease,transform .2s ease}.project-showcase{background:transparent}.visual-card img{filter:saturate(.82) contrast(1.04)}
-
-/* CV download */
-.cv-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:var(--accent);font-weight:700;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:5px}
-.cv-link:hover{opacity:.75}
-.cv-floating{position:fixed;right:22px;bottom:22px;z-index:50;display:inline-flex;align-items:center;padding:11px 16px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);font-weight:700;text-decoration:none;box-shadow:0 12px 30px rgba(0,0,0,.18)}
-.cv-floating:hover{border-color:var(--accent);color:var(--accent)}
+@media(max-width:850px){
+  .links{display:none}.menu{display:block}
+  .navopen .links{display:flex;position:absolute;top:78px;left:0;right:0;background:rgba(8,20,36,.98);padding:18px 5%;flex-direction:column;border-bottom:1px solid var(--line);box-shadow:0 18px 35px rgba(0,0,0,.2)}
+  .navopen .links a{color:#fff}
+  .hero{grid-template-columns:1fr;padding:75px 0}.portrait-wrap{order:-1;min-height:430px}.portrait-orbit{width:350px;height:350px;right:50%;transform:translateX(50%);top:20px}.portrait-card{width:270px}
+  .portrait-label{right:5px}.portrait-tag{left:-18px}
+  .section-head,.intro,.cta-inner{grid-template-columns:1fr;gap:25px}.work-row{grid-template-columns:120px 1fr}.work-row .type{display:none}
+  .project-showcase{grid-template-columns:1fr}.project{grid-template-columns:60px 1fr}.project .project-link{text-align:left;grid-column:2}.skills{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  .portrait-wrap{min-height:365px}.portrait-orbit{width:290px;height:290px}.portrait-card{width:225px}.portrait-tag{left:-8px;bottom:8px}.portrait-tag strong{font-size:12px}.portrait-label{display:none}
+  .hero h1{font-size:54px}.hero p{font-size:17px}.intro p{font-size:19px}.facts{grid-template-columns:1fr}.skills{grid-template-columns:1fr}
+  .work-row{grid-template-columns:1fr;gap:7px}.project{grid-template-columns:1fr;gap:10px}.project .project-link{grid-column:auto}.cta{padding:85px 0}footer{display:block}.footer-right{margin-top:6px}
+}
 </style>
 </head>
 <body>
-<nav id="nav"><div class="wrap navin"><a class="brand" href="#home">Aditya<span>.</span></a><button class="menu" aria-label="Open menu" onclick="nav.classList.toggle('navopen')">☰</button><div class="links"><a href="#about">About</a><a href="#work">Experience</a><a href="#projects">Projects</a>
-<a href="#skills">Skills</a><a href="#contact">Contact</a></div></div></nav>
+<nav id="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#home">Aditya<span>.</span></a>
+    <button class="menu" aria-label="Open menu" aria-expanded="false" onclick="toggleNav()">☰</button>
+    <div class="links">
+      <a href="#about">About</a><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
 <main id="home">
-<section class="hero wrap"><div class="reveal"><div class="eyebrow">Full Stack Developer · Data · Operations</div><h1>I build complete digital systems for <em>real-world problems.</em></h1><p>Muhammad Aditya Wiryawan Azizi Aswad — an IT graduate and operations/data professional combining software engineering, analytics, and practical business-process experience.</p><div class="actions"><a class="btn primary" href="#projects">View selected work ↗</a><a class="btn" href="assets/Muhammad_Aditya_CV.pdf" download>Download CV ↓</a></div></div><div class="portrait reveal"><img src="assets/profile.jpg" alt="Muhammad Aditya Wiryawan Azizi Aswad"></div></section>
-<section id="about"><div class="wrap"><div class="section-head reveal"><div><div class="section-no">01 / About</div></div><div><h2>Technology with operational context.</h2><p>I enjoy turning messy operational needs into clear systems, useful data, and reliable workflows.</p></div></div><div class="intro"><div class="reveal"><p>My background spans procurement, spare-parts coordination, operational excellence, production data, reporting, and HSE administration across industrial and mining environments.</p></div><div class="facts reveal"><div class="fact"><strong>5+</strong><span>Years professional experience</span></div><div class="fact"><strong>B.IT</strong><span>Brawijaya University</span></div><div class="fact"><strong>SAP</strong><span>ECC / S4HANA exposure</span></div><div class="fact"><strong>Data</strong><span>Excel · Power BI · SQL</span></div></div></div></div></section>
-<section id="work"><div class="wrap"><div class="section-head reveal"><div><div class="section-no">02 / Experience</div></div><div><h2>From operations to engineering.</h2><p>A career built around accuracy, coordination, process improvement, and data.</p></div></div><div class="work reveal">
-<div class="work-row"><time>2025 — Present</time><div><h3>Assistant Safety Engineer</h3><div class="company">PT Huali Nickel Indonesia · Data & Administration Support</div><p>Managed operational/HSE data, reporting, documentation, presentations, document control, and site coordination.</p></div><div class="type">Operations · Data</div></div>
-<div class="work-row"><time>2024 — 2025</time><div><h3>Earthwork Supervisor</h3><div class="company">Sorowako Limonite · Operations & Data Support</div><p>Processed production data, prepared daily/weekly reports, and monitored equipment utilization and material movement.</p></div><div class="type">Operations · Reporting</div></div>
-<div class="work-row"><time>2022 — 2024</time><div><h3>Coordinator Operational Excellence</h3><div class="company">PT Vale Indonesia Tbk.</div><p>Supported operational improvement, KPI monitoring, data analysis, standardized processes, and SAP-based reporting.</p></div><div class="type">Process · Analytics</div></div>
-<div class="work-row"><time>2021 — 2022</time><div><h3>Parts Coordinator</h3><div class="company">PT Vale Indonesia Tbk.</div><p>Managed spare-part inventory data, purchase requests, supplier coordination, stock monitoring, and procurement reporting.</p></div><div class="type">Procurement · Inventory</div></div>
-</div>
-<div class="experience-visual reveal">
-<div class="experience-visual-top"><span class="experience-visual-title">Experience in practice</span><span class="experience-visual-label">Process · Data · Operations</span></div>
-<div class="flow">
-<div class="flow-item"><div class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 7h16v13H4z"/><path d="M8 7V4h8v3M7 11h10M7 15h7"/></svg></div><div><strong>Procurement</strong><span>Requests · Suppliers · Purchasing</span></div></div>
-<div class="flow-item"><div class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5M8 17h8"/></svg></div><div><strong>Inventory</strong><span>Parts · Stock · Transactions</span></div></div>
-<div class="flow-item"><div class="flow-icon"><svg viewBox="0 0 24 24"><path d="M4 19V9M10 19V5M16 19v-8M22 19V3"/><path d="M3 19h20"/></svg></div><div><strong>Operations</strong><span>KPI · Reporting · Coordination</span></div></div>
-<div class="flow-item"><div class="flow-icon"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.4 8-8 9-4.6-1-8-4-8-9V6z"/><path d="m8 12 2.5 2.5L16 9"/></svg></div><div><strong>HSE & Data</strong><span>Controls · Documentation · Analysis</span></div></div>
-</div></div></div></section>
-<section id="projects"><div class="wrap"><div class="section-head reveal"><div><div class="section-no">03 / Selected Work</div></div><div><h2>Real work, presented with the systems behind it.</h2><p>My most recent deployed project is shown first, followed by technical case studies I am actively developing.</p></div></div><div class="project-showcase reveal">
-<div class="browser-mockup">
-<div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-url">https://balantangjaya.com/</span></div>
-<div class="browser-preview">
-<iframe src="https://balantangjaya.com/" title="Live preview of Balantang Jaya Global website" loading="eager" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-<div class="preview-fallback">
-<img src="https://balantangjaya.com/assets/images/gallery/01-drilling-operation.jpg" alt="Balantang Jaya Global drilling project">
-<a href="https://balantangjaya.com/" target="_blank" rel="noreferrer">Open live website ↗</a>
-</div>
-</div>
-</div>
-<div class="visual-stack">
-<div class="visual-card"><img src="https://balantangjaya.com/assets/images/gallery/07-project-site-overview.jpg" alt="Balantang Jaya Global project site overview" loading="eager"><div class="caption"><span>Project visual</span><span>2026</span></div></div>
-<div class="visual-card"><img src="https://balantangjaya.com/assets/images/gallery/03-operator-control.jpg" alt="Balantang Jaya Global operator control project visual" loading="eager"><div class="caption"><span>Field execution</span><span>Balantang Jaya Global</span></div></div>
-</div>
-</div>
-<div class="project-list">
-<article class="project reveal"><div class="num">01</div><div><h3>Balantang Jaya Global — Company Profile Website</h3><p>Designed and built a company profile website for Balantang Jaya Global, a drilling & construction company. The site presents company information, services, project experience, equipment fleet, HSE approach, gallery, and contact information in a responsive web experience.</p></div><div class="project-link"><a href="https://balantangjaya.com/" target="_blank" rel="noreferrer">Visit live site ↗</a><span>Company Website · 2026</span></div></article>
-<article class="project reveal"><div class="num">02</div><div><h3>Spare Part Inventory API</h3><p>Backend system concept for spare-parts, stock movements, suppliers, purchase requests, reorder thresholds, and operational reporting.</p></div><div class="project-link"><span>Backend Case Study</span></div></article>
-<article class="project reveal"><div class="num">03</div><div><h3>Procurement Analytics Platform</h3><p>Data-driven application concept for purchase orders, supplier performance, spending, lead time, and procurement trends.</p></div><div class="project-link"><span>Data + Operations</span></div></article>
-<article class="project reveal"><div class="num">04</div><div><h3>Spare Part Demand Forecasting</h3><p>Machine-learning project concept for forecasting historical spare-part consumption and supporting inventory planning.</p></div><div class="project-link"><span>Python · ML · Forecasting</span></div></article><div class="project-note reveal">The Balantang Jaya Global website is a live deployed project. The remaining technical projects will be linked to their GitHub repositories as each implementation is completed.</div>
+<section class="hero wrap">
+  <div class="reveal">
+    <div class="eyebrow">Full Stack Developer · Data · Operations</div>
+    <h1>I build digital systems for <em>real-world problems.</em></h1>
+    <p>Muhammad Aditya Wiryawan Azizi Aswad — an IT graduate and operations/data professional combining full-stack development, analytics, and practical business-process experience.</p>
+    <div class="actions">
+      <a class="btn primary" href="#projects">View selected work ↗</a>
+      <a class="btn" href="assets/Muhammad_Aditya_CV.pdf" download>Download CV ↓</a>
+    </div>
+  </div>
+
+  <div class="portrait-wrap reveal">
+    <div class="portrait-orbit"></div>
+    <div class="portrait-card">
+      <img src="assets/profile.jpg" alt="Muhammad Aditya Wiryawan Azizi Aswad">
+      <div class="portrait-tag"><small>01 / Profile</small><strong>Muhammad Aditya</strong></div>
+    </div>
+    <div class="portrait-label">FULL STACK · DATA · OPERATIONS</div>
+    <div class="portrait-index">01</div>
+  </div>
+</section>
+
+<section id="about"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-no">01 / About</div></div><div><h2>Technology with operational context.</h2><p>I enjoy turning messy operational needs into clear systems, useful data, and reliable workflows.</p></div></div>
+  <div class="intro"><div class="reveal"><p>My background spans procurement, spare-parts coordination, operational excellence, production data, reporting, and HSE administration across industrial and mining environments.</p></div>
+  <div class="facts reveal">
+    <div class="fact"><strong>5+</strong><span>Years professional experience</span></div><div class="fact"><strong>B.IT</strong><span>Brawijaya University</span></div>
+    <div class="fact"><strong>SAP</strong><span>ECC / S4HANA exposure</span></div><div class="fact"><strong>Data</strong><span>Excel · Power BI · SQL</span></div>
+  </div></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-no">02 / Experience</div></div><div><h2>From operations to engineering.</h2><p>A career built around accuracy, coordination, process improvement, and data.</p></div></div>
+  <div class="work reveal">
+    <div class="work-row"><time>2025 — Present</time><div><h3>Assistant Safety Engineer</h3><div class="company">PT Huali Nickel Indonesia · Data & Administration Support</div><p>Managed operational/HSE data, reporting, documentation, presentations, document control, and site coordination.</p></div><div class="type">Operations · Data</div></div>
+    <div class="work-row"><time>2024 — 2025</time><div><h3>Earthwork Supervisor</h3><div class="company">Sorowako Limonite · Operations & Data Support</div><p>Processed production data, prepared daily/weekly reports, and monitored equipment utilization and material movement.</p></div><div class="type">Operations · Reporting</div></div>
+    <div class="work-row"><time>2022 — 2024</time><div><h3>Coordinator Operational Excellence</h3><div class="company">PT Vale Indonesia Tbk.</div><p>Supported operational improvement, KPI monitoring, data analysis, standardized processes, and SAP-based reporting.</p></div><div class="type">Process · Analytics</div></div>
+    <div class="work-row"><time>2021 — 2022</time><div><h3>Parts Coordinator</h3><div class="company">PT Vale Indonesia Tbk.</div><p>Managed spare-part inventory data, purchase requests, supplier coordination, stock monitoring, and procurement reporting.</p></div><div class="type">Procurement · Inventory</div></div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-no">03 / Selected Work</div></div><div><h2>Things I've built and problems I want to solve.</h2><p>Real work first. Technical case studies will continue to grow alongside my engineering practice.</p></div></div>
+  <div class="project-showcase reveal">
+    <div class="browser-mockup"><div class="browser-bar"><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-url">balantangjaya.com</span></div><img class="browser-screen" src="https://balantangjaya.com/assets/images/gallery/01-drilling-operation.jpg" alt="Balantang Jaya Global drilling project website visual" loading="lazy" referrerpolicy="no-referrer"></div>
+    <div class="visual-stack">
+      <div class="visual-card"><img src="https://balantangjaya.com/assets/images/gallery/07-project-site-overview.jpg" alt="Balantang Jaya Global project site overview" loading="lazy" referrerpolicy="no-referrer"><div class="caption"><span>Project visual</span><span>2026</span></div></div>
+      <div class="visual-card"><img src="https://balantangjaya.com/assets/images/gallery/03-operator-control.jpg" alt="Balantang Jaya Global operator control project visual" loading="lazy" referrerpolicy="no-referrer"><div class="caption"><span>Field execution</span><span>Balantang Jaya Global</span></div></div>
+    </div>
+  </div>
+  <div class="project-list">
+    <article class="project reveal"><div class="num">01</div><div><h3>Balantang Jaya Global — Company Profile Website</h3><p>Designed and built a company profile website for Balantang Jaya Global, a drilling & construction company. The site presents company information, services, project experience, equipment fleet, HSE approach, gallery, and contact information in a responsive web experience.</p></div><div class="project-link"><a href="https://balantangjaya.com/" target="_blank" rel="noreferrer">Visit live site ↗</a><span>Company Website · 2026</span></div></article>
+    <article class="project reveal"><div class="num">02</div><div><h3>Spare Part Inventory API</h3><p>Backend system concept for spare-parts, stock movements, suppliers, purchase requests, reorder thresholds, and operational reporting.</p></div><div class="project-link"><span>Backend Case Study</span></div></article>
+    <article class="project reveal"><div class="num">03</div><div><h3>Procurement Analytics Platform</h3><p>Data-driven application concept for purchase orders, supplier performance, spending, lead time, and procurement trends.</p></div><div class="project-link"><span>Data + Operations</span></div></article>
+    <article class="project reveal"><div class="num">04</div><div><h3>Spare Part Demand Forecasting</h3><p>Machine-learning project concept for forecasting historical spare-part consumption and supporting inventory planning.</p></div><div class="project-link"><span>Python · ML · Forecasting</span></div></article>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="section-head reveal"><div><div class="section-no">04 / Skills</div></div><div><h2>Full-stack skills with practical context.</h2><p>A toolkit covering interface development, application logic, data, APIs, and the systems behind business workflows.</p></div></div>
+  <div class="skills reveal">
+    <div class="skill"><h3>Frontend Development</h3><p>Building responsive, accessible interfaces and reusable UI components.</p><ul class="skill-list"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive UI</li><li>Accessibility</li><li>GitHub Pages</li></ul></div>
+    <div class="skill"><h3>Full Stack Development</h3><p>Connecting frontend experiences with APIs, authentication, validation, and application workflows.</p><ul class="skill-list"><li>REST APIs</li><li>API Integration</li><li>Authentication</li><li>Validation</li><li>API Docs</li><li>Testing</li></ul></div>
+    <div class="skill"><h3>Backend & Data</h3><p>Application logic, structured data, reporting, and analytical workflows.</p><ul class="skill-list"><li>Node.js</li><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>Excel</li><li>Power BI</li></ul></div>
+    <div class="skill"><h3>Systems & Engineering</h3><p>Tools and enterprise context supporting reliable development and operations.</p><ul class="skill-list"><li>Git</li><li>Docker</li><li>SAP ECC</li><li>SAP S/4HANA</li><li>CI/CD Concepts</li><li>Documentation</li></ul></div>
+  </div>
+</div></section>
+
+<section id="contact" class="cta"><div class="wrap"><div class="cta-inner">
+  <div class="reveal"><div class="section-no">05 / Contact</div><h2>Let's build something <em>useful.</em></h2></div>
+  <div class="contact-list reveal">
+    <a class="contact-link" href="mailto:aditmawaa@gmail.com">✉&nbsp; aditmawaa@gmail.com</a>
+    <a class="contact-link" href="tel:+6282187458033">⌕&nbsp; +62 821-8745-8033</a>
+    <a class="contact-link" href="https://linkedin.com/in/aditmawaa" target="_blank" rel="noreferrer">in&nbsp; LinkedIn ↗</a>
+    <a class="contact-link" href="https://github.com/" target="_blank" rel="noreferrer">⌘&nbsp; GitHub ↗</a>
+  </div>
 </div></div></section>
-<section id="skills"><div class="wrap"><div class="section-head reveal"><div><div class="section-no">04 / Skills</div></div><div><h2>A practical toolkit.</h2><p>Focused on useful systems, data, and business workflows.</p></div></div><div class="skills reveal"><div class="skill"><h3>Backend</h3><p>Node.js · Python · REST APIs · Authentication · Validation</p></div><div class="skill"><h3>Data</h3><p>SQL · PostgreSQL · Excel · Power BI · Data Processing</p></div><div class="skill"><h3>Systems</h3><p>SAP ECC/S4HANA · Documentation · Reporting · Process Support</p></div><div class="skill"><h3>Engineering</h3><p>Git · Docker · Testing mindset · API documentation · CI/CD concepts</p></div></div></div></section>
-<section id="contact" class="cta"><div class="wrap"><div class="cta-inner"><div class="reveal"><div class="section-no">05 / Contact</div><h2>Let's build something <em>useful.</em></h2></div><div class="contact-list reveal">
-<a class="contact-link" href="mailto:aditmawaa@gmail.com"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>aditmawaa@gmail.com</a>
-<a class="contact-link" href="tel:+6282187458033"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h3l2 5-2 2c1.4 2.8 3.2 4.6 6 6l2-2 5 2v3c0 1.1-.9 2-2 2C11.2 21 3 12.8 3 3c0-1.1.9-2 2-2h2z"/></svg>+62 821-8745-8033</a>
-<a class="contact-link" href="https://linkedin.com/in/aditmawaa" target="_blank" rel="noreferrer"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8v11"/><path d="M5 5v.1"/><path d="M10 19V8"/><path d="M10 12c1-3 7-4 7 2v5"/><path d="M17 19v-5"/></svg>LinkedIn ↗</a>
-<a class="contact-link" href="https://github.com/aditmawaa" target="_blank" rel="noreferrer"><svg class="contact-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1-4-2-5-2m10 4v-3.2c0-1 .4-1.7 1-2.3-3.3-.4-6.7-1.6-6.7-7A5.4 5.4 0 0 1 9.7 4c-.2-.5-.6-1.6.2-3.3 0 0 1.1-.3 3.5 1.3a12 12 0 0 1 6.4 0C22.2.4 23.3.7 23.3.7c.8 1.7.4 2.8.2 3.3a5.4 5.4 0 0 1 1.4 3.5c0 5.4-3.4 6.6-6.7 7 .6.5 1 1.4 1 2.6V22"/></svg>GitHub ↗</a>
-</div></div></div></section>
-</main><footer class="wrap"><span>© 2026 Muhammad Aditya Wiryawan Azizi Aswad</span><span class="footer-right">Backend · Data · Operations</span></footer>
-<script>const nav=document.getElementById('nav');const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('navopen')));</script>
-</body></html>
+</main>
+
+<footer class="wrap"><span>© 2026 Muhammad Aditya Wiryawan Azizi Aswad</span><span class="footer-right">Full Stack · Data · Operations</span></footer>
+
+<script>
+const nav=document.getElementById("nav");
+const menu=document.querySelector(".menu");
+function toggleNav(){
+  const open=nav.classList.toggle("navopen");
+  menu.setAttribute("aria-expanded",open?"true":"false");
+  menu.setAttribute("aria-label",open?"Close menu":"Open menu");
+}
+document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>{
+  nav.classList.remove("navopen");menu.setAttribute("aria-expanded","false");menu.setAttribute("aria-label","Open menu");
+}));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.08});
+document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
