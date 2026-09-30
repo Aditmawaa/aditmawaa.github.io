@@ -1,46 +1,45 @@
-# Aditya — Full Stack Portfolio
+# Mawaa — Portfolio with Integrated Brand Logo
 
-This version keeps the dark navy/teal visual direction and includes:
+This version integrates the new geometric A-mark into the portfolio navigation.
 
-- White desktop/mobile navigation text
-- White hamburger menu icon on mobile
-- `Aditya.` fully white
-- `View selected work` + `Download CV` hero buttons
-- Enhanced profile-photo presentation using the existing profile image
-- Decorative orbit, layered frames, profile badge, and vertical label around the photo
-- Frontend Development skills
-- Full Stack Development skills
-- Backend & Data skills
-- Systems & Engineering skills
-- Responsive layout
-- Scroll reveal animation
-- GitHub Pages compatible static HTML/CSS/JavaScript
+## Logo direction
 
-## Structure
+The logo is designed around:
+
+- Letter A — Aditya's initial
+- Curved/forward stroke — journey, growth, and progress
+- Star/spark — impact and ideas
+- Blue/teal palette — technology, data, and a modern professional identity
+- Dark navy background — consistent with the portfolio theme
+
+The navbar brand is now `mawaa.`: the name is white and the dot stays teal. The geometric A-mark remains as the visual logo symbol.
+
+## Files
 
 ```text
 aditya-portfolio/
 ├── index.html
 ├── README.md
 └── assets/
+    ├── aditya-logo.png
     ├── profile.jpg
     └── Muhammad_Aditya_CV.pdf
 ```
 
-## Deploy
+## GitHub Pages update
 
-Replace the files in the `aditmawaa.github.io` repository, then:
+Replace the repository files, then:
 
 ```bash
 git add .
-git commit -m "Update portfolio navigation profile and full stack skills"
+git commit -m "Add Aditya brand logo to portfolio"
 git push origin main
 ```
 
-After GitHub Pages deploys, hard refresh the browser with `Ctrl + Shift + R`.
+Hard refresh after deployment:
 
-## Important
+```text
+Ctrl + Shift + R
+```
 
-The profile photo is the existing user-provided portfolio photo. No new/generated image is used.
-
-The technical skills section is written conservatively around technologies already represented in the portfolio. Add React, Next.js, TypeScript, etc. only after you have actually built projects with them and can discuss them in an interview.
+No new profile image was generated. The existing profile photo remains unchanged.
